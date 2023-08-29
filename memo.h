@@ -32,4 +32,28 @@ void memo()
 		std::cout << ch;
 	}
    // 복잡하니 대신 생긴것이 try catch
+	ifs.exceptions(std::ifstream::badbit);
+
+	try
+	{
+		ifs.open(filename);
+
+		char ch;
+
+		while (ifs.get(ch))
+		{
+			// std::cout << ch;
+		}
+
+		ifs.close();
+	}
+
+	catch (std::ifstream::failure e)
+	{
+		std::cerr << std::endl << e.code() << " : " << e.what() << std::endl;
+		ifs.close();
+		return false;
+	}
+	return true;
+
 }
