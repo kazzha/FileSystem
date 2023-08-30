@@ -23,5 +23,11 @@
     <ClInclude Include="memo.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
+    <ClInclude Include="file_stream.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="xml_parser.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
